@@ -1,5 +1,6 @@
 import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
+import githubExamples from "./github-examples.js";
 // import threeTutorial from "./three-tutorial.js";
 // import threeSymbol from "./three-symbol.js";
 import threeCesiumAuthors from "./author.js";
@@ -11,10 +12,11 @@ window.THREE_CESIUM_LINKS = threeCesiumLinks;
 window.FILE_HOST = FILE_HOST;
 
 window.THREE_CESIUM_NAVIGATION = [
-  { name: "Three.js扩展[r167]", examples: threeExamples },
+  { name: "Three.js扩展案例", examples: threeExamples },
   // { name: "Three.js教程[r166]", examples: threeTutorial },
   // { name: "Three.js符号库", examples: threeSymbol },
-  { name: "Cesium.js案例[1.119]", examples: cesiumExamples },
+  { name: "Cesium.js案例", examples: cesiumExamples },
+  { name: "Github案例", examples: githubExamples},
 ];
 
 window.THREE_CESIUM_AUTHORS = threeCesiumAuthors;
@@ -22,7 +24,7 @@ window.THREE_CESIUM_AUTHORS = threeCesiumAuthors;
 /* 依赖注入 */
 window.GET_SCRIPT = (v, t) => {
   let scriptContent = ``; 
-  if (t === "Cesium.js案例[1.119]") {
+  if (t === "Cesium.js案例") {
     scriptContent = `
     <link rel="stylesheet" href= "${HOST}js/cesium/style.css">
  <script type="importmap">

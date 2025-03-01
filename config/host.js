@@ -2,7 +2,8 @@ let HOST = window.origin + window.location.pathname
 
 HOST = HOST.replace(/\/index.html$/, '/')
 
-const FILE_HOST = 'https://www.threelab.cn/cdn/' // 文件资源服务器
+// const FILE_HOST = 'https://www.threelab.cn/cdn/' // 文件资源服务器
+const FILE_HOST = 'https://AivoGenX.github.io/web3d-file-server/' // 文件资源服务器 
 
 export { HOST, FILE_HOST }
 
