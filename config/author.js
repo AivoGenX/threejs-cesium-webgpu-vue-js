@@ -188,26 +188,114 @@ export default [
     name: 'vasturiano',
     github: 'https://github.com/vasturiano',
     icon: 'https://avatars.githubusercontent.com/u/6784226?v=4'
-},
-{
-  id: 'threemap',
-  name: 'threemap',
-  github: 'https://github.com/threemap',
-  icon: 'https://avatars.githubusercontent.com/u/184769639?v=4'
-},
+  },
+  {
+    id: 'threemap',
+    name: 'threemap',
+    github: 'https://github.com/threemap',
+    icon: 'https://avatars.githubusercontent.com/u/184769639?v=4'
+  },
 
-{
-  id: 'fengtianxi001',
-  name: 'fengtianxi001',
-  github: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
-  icon: 'https://avatars.githubusercontent.com/u/37908056?v=4'
-},
-{
-  id: 'junhong-chen',
-  name: 'junhong-chen',
-  github: 'https://github.com/junhong-chen/MF-TurbineMonitor',
-  icon: 'https://avatars.githubusercontent.com/u/38965956?v=4'
-},
+  {
+    id: 'fengtianxi001',
+    name: 'fengtianxi001',
+    github: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
+    icon: 'https://avatars.githubusercontent.com/u/37908056?v=4'
+  },
+  {
+    id: 'junhong-chen',
+    name: 'junhong-chen',
+    github: 'https://github.com/junhong-chen/MF-TurbineMonitor',
+    icon: 'https://avatars.githubusercontent.com/u/38965956?v=4'
+  },
+  {
+    id: 'lpya',
+    name: 'lpya',
+    github: 'https://github.com/lpya',
+    icon: 'https://avatars.githubusercontent.com/u/65885528?v=4'
+  },
+  {
+    id: 'ykob',
+    name: 'ykob',
+    github: 'https://github.com/ykob',
+    icon: 'https://avatars.githubusercontent.com/u/5755225?v=4'
+  },
+  {
+    id: 'dragonir',
+    name: 'dragonir',
+    github: 'https://github.com/dragonir',
+    icon: 'https://avatars.githubusercontent.com/u/21058931?v=4'
+  },
+  {
+    id: 'journey',
+    author: 'journey',
+    name: 'ThreeJourney',
+    openUrl: 'https://journey.pmnd.rs/',
+    github: 'https://github.com/pmndrs/threejs-journey',
+    image: 'https://avatars.githubusercontent.com/u/45790596?s=200&v=4'
+  },
+  {
+    id: 'wuyifan0203',
+    name: 'wuyifan0203',
+    github: 'https://github.com/wuyifan0203',
+    icon: 'https://avatars.githubusercontent.com/u/58818101?v=4'
+  },
 
+  {
+    id: 'sxguojf',
+    name: 'sxguojf',
+    github: 'https://github.com/sxguojf',
+    icon: 'https://avatars.githubusercontent.com/u/67039275?v=4'
+
+  },
+  {
+    id: 'zhengjie9510',
+    name: 'zhengjie9510',
+    github: 'https://github.com/zhengjie9510',
+    icon: 'https://avatars.githubusercontent.com/u/48191797'
+  },
+  {
+    id: 'tingyuxuan2302',
+    name: 'tingyuxuan2302',
+    github: 'https://github.com/tingyuxuan2302',
+    icon: 'https://avatars.githubusercontent.com/u/22094990?v=4'
+  },
+
+  {
+    id: 'quyinggang',
+    name: 'quyinggang',
+    github: 'https://github.com/quyinggang',
+    icon: 'https://avatars.githubusercontent.com/u/20634057?v=4'
+  },
+  {
+    id: 'bosombaby',
+    name: 'bosombaby',
+    github: 'https://github.com/bosombaby',
+    icon: 'https://avatars.githubusercontent.com/u/80099933?v=4'
+  },
+  {
+    id: 'pengfeiw',
+    name: 'WangPengfei',
+    github: 'https://github.com/pengfeiw',
+    icon: 'https://avatars.githubusercontent.com/u/37898750?v=4'
+  },
+  {
+    id: 'boytchev',
+    name: 'boytchev',
+    github: 'https://github.com/boytchev',
+    icon: 'https://avatars.githubusercontent.com/u/70705048?v=4'
+  },
+  {
+    id: 'spite',
+    name: 'spite',
+    github: 'https://github.com/spite',
+    icon: 'https://avatars.githubusercontent.com/u/731885?v=4'
+  },
+  {
+    id: 'lo-th',
+    name: 'lo-th',
+    github: 'https://github.com/lo-th',
+    icon: 'https://avatars.githubusercontent.com/u/1553208?v=4'
+  },
 
 ];

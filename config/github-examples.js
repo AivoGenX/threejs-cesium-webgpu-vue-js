@@ -30,4 +30,145 @@ export default [
             },
         ]
     },
+    {
+        pid: 'openSourceStation',
+        name: '资源链接',
+        name_en: 'Resource Link',
+        children: [
+            {
+                id: 'sketchThree',
+                author: 'ykob',
+                name: 'Three特效',
+                openUrl: 'https://ykob.github.io/sketch-threejs/',
+                githubUrl: 'https://github.com/ykob/sketch-threejs',
+                image: FILE_HOST + 'images/sketchThree.jpg'
+            },
+
+            {
+                id: 'dragonir',
+                author: 'dragonir',
+                name: 'Three 案例',
+                name_en: 'Three Examples',
+                openUrl: 'https://dragonir.github.io/3d',
+                githubUrl: 'https://github.com/dragonir/3d',
+                image: FILE_HOST + 'images/dragonir.jpg'
+            },
+
+            {
+                id: 'journey',
+                author: 'journey',
+                name: 'ThreeJourney', 
+                openUrl: 'https://journey.pmnd.rs/',
+                githubUrl: 'https://github.com/pmndrs/threejs-journey',
+                image: HOST + 'threeExamples/openSource/threejs-journey.jpg'
+            },
+
+            {
+                id: 'wuyifan0203',
+                author: 'wuyifan0203',
+                name: 'Three源码案例', 
+                openUrl: 'https://wuyifan0203.github.io/threejs-demo',
+                githubUrl: 'https://github.com/wuyifan0203/threejs-demo',
+                image: FILE_HOST + 'images/wuyifan0203.jpg'
+            },
+            {
+                id: 'alwxkxk',
+                author: 'alwxkxk',
+                name: 'Three案例', 
+                openUrl: 'https://alwxkxk.github.io/threejs-example/',
+                githubUrl: 'https://github.com/alwxkxk/threejs-example',
+                image: FILE_HOST + 'images/alwxkxk.jpg'
+            },
+
+            {
+                id: 'sxguojf',
+                author: 'sxguojf',
+                name: 'Three结合地图瓦片', 
+                openUrl: 'https://sxguojf.github.io/three-tile-example/',
+                githubUrl: 'https://github.com/sxguojf/three-tile',
+                image: FILE_HOST + 'images/wangpengfei.jpg'
+            },
+
+            {
+                id: 'bulang_cesium',
+                author: 'tingyuxuan2302',
+                name: 'Cesium案例', 
+                openUrl: 'https://tingyuxuan2302.github.io/cesium-vue3-vite/',
+                githubUrl: 'https://github.com/tingyuxuan2302/cesium-vue3-vite',
+                image: HOST + 'threeExamples/openSource/bulang_cesium.jpg'
+            },
+
+            {
+                id: 'zhengjie9510',
+                author: 'zhengjie9510',
+                name: 'Cesium案例', 
+                openUrl: 'https://zhengjie9510.github.io/webgis-demo',
+                githubUrl: 'https://github.com/zhengjie9510/webgis-demo',
+                image: FILE_HOST + 'images/zhengjie9510.jpg'
+            },
+
+            {
+                id: 'quyinggang',
+                name: 'Three学习案例', 
+                author: 'quyinggang',
+                githubUrl: 'https://github.com/quyinggang/three3d',
+                openUrl: 'https://quyinggang.github.io/three3d/',
+                image: FILE_HOST + 'images/quyinggang.jpg'
+            },
+            {
+                id: 'bosombaby',
+                author: 'bosombaby',
+                name: 'Three 案例',
+                name_en: 'Three Examples',
+                openUrl: 'https://product.vrteam.top/',
+                githubUrl: 'https://github.com/bosombaby/web3d-product',
+                image: FILE_HOST + 'images/bosombaby.jpg'
+            },
+            {
+                id: 'pengfeiw',
+                author: 'pengfeiw',
+                name: '3d 案例',
+                name_en: '3D Examples',
+                githubUrl: 'https://github.com/pengfeiw/threejs-case',
+                openUrl: 'https://pengfeiw.github.io/minicode/',
+                image: HOST + 'threeExamples/openSource/wangpengfei.jpg'
+            },
+
+            {
+                id: 'lpya',
+                author: 'lpya',
+                name: 'vue Three案例',
+                name_en: 'Vue Three',
+                openUrl: 'https://lpya.github.io/vue2-threejs-sefficacy',
+                githubUrl: 'https://github.com/lpya/vue2-threejs-sefficacy',
+                image: FILE_HOST + 'images/lpya.jpg'
+            },
+            {
+                id: 'boytchev',
+                author: 'boytchev',
+                name: 'Three案例',
+                name_en: 'Three etudes',
+                openUrl: 'https://boytchev.github.io/etudes/',
+                githubUrl: 'https://github.com/boytchev/etudes',
+                image: HOST + 'threeExamples/openSource/etudes.jpg'
+            },
+            {
+                id:'genuary',
+                author: 'spite',
+                name: 'Genuary 2022',
+                githubUrl: 'https://github.com/spite/genuary-2022',
+                openUrl: 'https://spite.github.io/genuary-2022/',
+                image: HOST + 'threeExamples/openSource/genuary.jpg'
+            },
+            {
+                id: 'lo-th',
+                author: 'lo-th',
+                name: 'ThreeLab',
+                name_en: 'ThreeLab',
+                githubUrl: 'https://github.com/lo-th/three.lab',
+                openUrl: 'https://lo-th.github.io/three.lab/examples/#webgl_gpgpu_water',
+                image: HOST + 'threeExamples/openSource/threelab.jpg'
+            }
+        ]
+    },
 ]
