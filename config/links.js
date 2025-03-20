@@ -1,7 +1,7 @@
 export default [
     {
-        name: '🏡tutorial',
-        url: 'https://threelab.cn/pages/8852d2/'
+        name: '🏡Home',
+        url: 'https://threelab.cn/'
     },
 
     {

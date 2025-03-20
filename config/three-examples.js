@@ -603,7 +603,14 @@ export default [
   {
     pid: "PrimitiveBody",
     name: "体图元",
-    children: [
+    children: [ 
+      {
+        id: "RotateCube",
+        name: "动态光影立方体",
+        author: "giser2017",
+        codeUrl: HOST + "/threeExamples/application/RotateCube.html",
+        image: HOST + "/threeExamples/application/RotateCube.png",
+      },
       {
         id: "pieCharts",
         name: "3D饼图",
