@@ -1,5 +1,6 @@
 import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
+import webglExamples from "./webgl-examples.js";
 import githubExamples from "./github-examples.js";
 // import threeTutorial from "./three-tutorial.js";
 // import threeSymbol from "./three-symbol.js";
@@ -16,6 +17,7 @@ window.THREE_CESIUM_NAVIGATION = [
   // { name: "Three.js教程[r166]", examples: threeTutorial },
   // { name: "Three.js符号库", examples: threeSymbol },
   { name: "Cesium.js案例", examples: cesiumExamples },
+  { name: "WebGL", examples: webglExamples },
   { name: "Github案例", examples: githubExamples},
 ];
 
