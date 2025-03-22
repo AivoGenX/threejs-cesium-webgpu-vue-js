@@ -297,5 +297,28 @@ export default [
     github: 'https://github.com/lo-th',
     icon: 'https://avatars.githubusercontent.com/u/1553208?v=4'
   },
-
+  {
+    id: 'iTowns',
+    name: 'iTowns',
+    github: 'https://github.com/iTowns/itowns',
+    icon: 'https://avatars.githubusercontent.com/u/14266889?s=200&v=4'
+  },
+  {
+    id: 'tvtJs',
+    name: 'tvtJs',
+    github: 'https://github.com/iTowns/itowns',
+    icon: 'https://avatars.githubusercontent.com/u/14266889?s=200&v=4'
+  },
+  {
+    id: 'alphardex',
+    name: 'alphardex',
+    github: 'https://github.com/alphardex',
+    icon: 'https://avatars.githubusercontent.com/u/22198352?v=4'
+  },
+  {
+    id: 'troisjs',
+    name: 'troisjs',
+    github: 'https://github.com/troisjs',
+    icon: 'https://avatars.githubusercontent.com/u/71195362?s=200&v=4'
+  },
 ];
