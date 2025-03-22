@@ -5,7 +5,7 @@ export default [
         name: '基础功能',
         children: [
             {
-                id: 'defaultLayer',
+                id: 'Triangle',
                 name: '三角形',
                 author: 'giser2017',
                 codeUrl: HOST + '/webglExamples/base/Triangle.html',
