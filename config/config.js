@@ -2,6 +2,10 @@ import cesiumExamples from "./cesium-examples.js";
 import threeExamples from "./three-examples.js";
 import webglExamples from "./webgl-examples.js";
 import githubExamples from "./github-examples.js";
+// WEBGPU
+import webgpuExamples from "./webgpu-examples.js";
+
+
 // import threeTutorial from "./three-tutorial.js";
 // import threeSymbol from "./three-symbol.js";
 import threeCesiumAuthors from "./author.js";
@@ -18,6 +22,7 @@ window.THREE_CESIUM_NAVIGATION = [
   // { name: "Three.js符号库", examples: threeSymbol },
   { name: "Cesium.js案例", examples: cesiumExamples },
   { name: "WebGL", examples: webglExamples },
+  { name: "WebGPU", examples: webgpuExamples }, 
   { name: "Github案例", examples: githubExamples},
 ];
 
