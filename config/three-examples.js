@@ -5,6 +5,14 @@ export default [
     name: "合作伙伴",
     children: [
       {
+        id: 'officialExamples', // 官方示例
+        name: '官方示例 - 优化版',
+        author: "AivoGenX",  
+        openUrl: 'http://examples.threelab.cn/#/example',
+        githubUrl: 'https://github.com/OpenWeb3D/ThreeChineseExamples',
+        image: HOST + "/threeExamples/openSource/ThreeChineseExamples.png",
+      },
+      {
         id: "tool",
         name: "地图下载器",
         author: "AivoGenX",
@@ -264,7 +272,7 @@ export default [
         id: 'circleWave',
         name: '圆波扫光',
         name_en: 'Circle Wave',
-        author: 'alphardex', 
+        author: 'alphardex',
         codeUrl: HOST + 'threeExamples/shader/circleWave.html',
         image: HOST + 'threeExamples/shader/circleWave.jpg',
       },
