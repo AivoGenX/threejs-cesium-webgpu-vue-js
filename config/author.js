@@ -321,4 +321,10 @@ export default [
     github: 'https://github.com/troisjs',
     icon: 'https://avatars.githubusercontent.com/u/71195362?s=200&v=4'
   },
+   {
+    id: 'alphardex',
+    name: 'alphardex',
+    github: 'https://github.com/alphardex',
+    icon: 'https://avatars.githubusercontent.com/u/22198352?v=4'
+  },
 ];

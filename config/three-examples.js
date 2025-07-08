@@ -261,6 +261,14 @@ export default [
     name: "着色器",
     children: [
       {
+        id: 'circleWave',
+        name: '圆波扫光',
+        name_en: 'Circle Wave',
+        author: 'alphardex', 
+        codeUrl: HOST + 'threeExamples/shader/circleWave.html',
+        image: HOST + 'threeExamples/shader/circleWave.jpg',
+      },
+      {
         id: 'cellShader',
         name: '细胞',
         author: 'stonerao',
@@ -603,7 +611,7 @@ export default [
   {
     pid: "PrimitiveBody",
     name: "体图元",
-    children: [ 
+    children: [
       {
         id: "RotateCube",
         name: "动态光影立方体",
