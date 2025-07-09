@@ -269,6 +269,14 @@ export default [
     name: "着色器",
     children: [
       {
+        id: 'innerGlow',
+        name: '内发光',
+        name_en: 'Inner Glow',
+        author: 'quyinggang',  
+        codeUrl: HOST + 'threeExamples/shader/innerGlow.html',
+        image: HOST + 'threeExamples/shader/innerGlow.png',
+      },
+      {
         id: 'planeScan',
         name: '平面扫描',
         name_en: 'Plane Scan',
