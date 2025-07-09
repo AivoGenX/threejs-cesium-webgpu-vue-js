@@ -5,9 +5,9 @@ export default [
     name: "合作伙伴",
     children: [
       {
-        id: 'officialExamples', // 官方示例
+        id: 'ThreeChineseExamples', // 官方示例
         name: '官方示例 - 优化版',
-        author: "AivoGenX",  
+        author: "AivoGenX",
         openUrl: 'http://examples.threelab.cn/#/example',
         githubUrl: 'https://github.com/OpenWeb3D/ThreeChineseExamples',
         image: HOST + "/threeExamples/openSource/ThreeChineseExamples.png",
@@ -268,6 +268,14 @@ export default [
     pid: "shader",
     name: "着色器",
     children: [
+      {
+        id: 'planeScan',
+        name: '平面扫描',
+        name_en: 'Plane Scan',
+        author: 'AivoGenX',
+        codeUrl: HOST + 'threeExamples/shader/planeScan.html',
+        image: HOST + 'threeExamples/shader/planeScan.jpg',
+      },
       {
         id: 'circleWave',
         name: '圆波扫光',
