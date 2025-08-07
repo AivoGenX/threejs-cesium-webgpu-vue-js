@@ -5,23 +5,22 @@ export default [
     name: "合作伙伴",
     children: [
       {
-        id: 'ThreeChineseExamples', // 官方示例
-        name: '官方示例 - 优化版',
+        id: "ThreeChineseExamples", // 官方示例
+        name: "官方示例 - 优化版",
         author: "AivoGenX",
-        openUrl: 'http://examples.threelab.cn/#/example',
-        githubUrl: 'https://github.com/OpenWeb3D/ThreeChineseExamples',
+        openUrl: "http://examples.threelab.cn/#/example",
+        githubUrl: "https://github.com/OpenWeb3D/ThreeChineseExamples",
         image: HOST + "/threeExamples/openSource/ThreeChineseExamples.png",
       },
       {
         id: "tool",
         name: "地图下载器",
         author: "AivoGenX",
-        openUrl: "https://blog.csdn.net/huhuan123456/article/details/143191390?sharetype=blogdetail&sharerId=143191390&sharerefer=PC&sharesource=huhuan123456&spm=1011.2480.3001.8118",
+        openUrl:
+          "https://blog.csdn.net/huhuan123456/article/details/143191390?sharetype=blogdetail&sharerId=143191390&sharerefer=PC&sharesource=huhuan123456&spm=1011.2480.3001.8118",
         githubUrl: "https://pan.baidu.com/s/1AiFKTTknkEHkJ7t4nQ2P1g",
-        image: FILE_HOST + 'images/tool.png'
-
+        image: FILE_HOST + "images/tool.png",
       },
-
     ],
   },
   {
@@ -173,7 +172,6 @@ export default [
           description: "程序化地形生成",
         },
       },
-
     ],
   },
   {
@@ -181,12 +179,12 @@ export default [
     name: "行业应用",
     children: [
       {
-        id: 'feng_ji',
-        name: '风机',
-        author: 'fengtianxi001',
-        openUrl: 'https://fengtianxi001.github.io/MF-TurbineMonitor',
-        githubUrl: 'https://github.com/fengtianxi001/MF-TurbineMonitor',
-        image: FILE_HOST + 'images/fengji.jpg'
+        id: "feng_ji",
+        name: "风机",
+        author: "fengtianxi001",
+        openUrl: "https://fengtianxi001.github.io/MF-TurbineMonitor",
+        githubUrl: "https://github.com/fengtianxi001/MF-TurbineMonitor",
+        image: FILE_HOST + "images/fengji.jpg",
       },
     ],
   },
@@ -195,12 +193,12 @@ export default [
     name: "高级案例",
     children: [
       {
-        id: 'roaming',
-        author: 'junhong-chen',
-        name: '漫游模拟器',
-        githubUrl: 'https://github.com/Junhong-Chen/roaming-simulator',
-        openUrl: 'https://junhong-chen.github.io/roaming-simulator/',
-        image: HOST + 'threeExamples/openSource/roaming.jpg'
+        id: "roaming",
+        author: "junhong-chen",
+        name: "漫游模拟器",
+        githubUrl: "https://github.com/Junhong-Chen/roaming-simulator",
+        openUrl: "https://junhong-chen.github.io/roaming-simulator/",
+        image: HOST + "threeExamples/openSource/roaming.jpg",
       },
       {
         id: "taohuating",
@@ -255,12 +253,12 @@ export default [
         image: HOST + "/threeExamples/openSource/kallkago_su7.jpg",
       },
       {
-        id: 'su7peng',
-        name: 'SU7复刻仿真',
-        author: 'Pong-lei',
-        openUrl: 'https://aivogenx.github.io/threeExamples/su7_2/',
-        githubUrl: 'https://github.com/Pong-lei/su7_imitate',
-        image: HOST + 'threeExamples/openSource/su7peng.jpg'
+        id: "su7peng",
+        name: "SU7复刻仿真",
+        author: "Pong-lei",
+        openUrl: "https://aivogenx.github.io/threeExamples/su7_2/",
+        githubUrl: "https://github.com/Pong-lei/su7_imitate",
+        image: HOST + "threeExamples/openSource/su7peng.jpg",
       },
     ],
   },
@@ -269,35 +267,42 @@ export default [
     name: "着色器",
     children: [
       {
-        id: 'innerGlow',
-        name: '内发光',
-        name_en: 'Inner Glow',
-        author: 'quyinggang',  
-        codeUrl: HOST + 'threeExamples/shader/innerGlow.html',
-        image: HOST + 'threeExamples/shader/innerGlow.png',
+        id: "cityEffect",
+        name: "城市扫描",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/cityEffect.html",
+        image: HOST + "threeExamples/shader/cityEffect.jpg",
       },
       {
-        id: 'planeScan',
-        name: '平面扫描',
-        name_en: 'Plane Scan',
-        author: 'AivoGenX',
-        codeUrl: HOST + 'threeExamples/shader/planeScan.html',
-        image: HOST + 'threeExamples/shader/planeScan.jpg',
+        id: "innerGlow",
+        name: "内发光",
+        name_en: "Inner Glow",
+        author: "quyinggang",
+        codeUrl: HOST + "threeExamples/shader/innerGlow.html",
+        image: HOST + "threeExamples/shader/innerGlow.png",
       },
       {
-        id: 'circleWave',
-        name: '圆波扫光',
-        name_en: 'Circle Wave',
-        author: 'alphardex',
-        codeUrl: HOST + 'threeExamples/shader/circleWave.html',
-        image: HOST + 'threeExamples/shader/circleWave.jpg',
+        id: "planeScan",
+        name: "平面扫描",
+        name_en: "Plane Scan",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/planeScan.html",
+        image: HOST + "threeExamples/shader/planeScan.jpg",
       },
       {
-        id: 'cellShader',
-        name: '细胞',
-        author: 'stonerao',
-        codeUrl: HOST + 'threeExamples/shader/cellShader.html',
-        image: HOST + 'threeExamples/shader/cellShader.jpg',
+        id: "circleWave",
+        name: "圆波扫光",
+        name_en: "Circle Wave",
+        author: "alphardex",
+        codeUrl: HOST + "threeExamples/shader/circleWave.html",
+        image: HOST + "threeExamples/shader/circleWave.jpg",
+      },
+      {
+        id: "cellShader",
+        name: "细胞",
+        author: "stonerao",
+        codeUrl: HOST + "threeExamples/shader/cellShader.html",
+        image: HOST + "threeExamples/shader/cellShader.jpg",
       },
       {
         id: "smokeCircle",
@@ -574,18 +579,18 @@ export default [
         },
       },
       {
-        id: 'heartShader',
-        name: '流光心',
-        author: 'threemap',
-        codeUrl: HOST + 'threeExamples/shader/heartShader.html',
-        image: HOST + 'threeExamples/shader/heartShader.jpg',
+        id: "heartShader",
+        name: "流光心",
+        author: "threemap",
+        codeUrl: HOST + "threeExamples/shader/heartShader.html",
+        image: HOST + "threeExamples/shader/heartShader.jpg",
       },
       {
-        id: 'candleShader',
-        name: '蜡烛',
-        author: 'z2586300277',
-        codeUrl: HOST + 'threeExamples/shader/candleShader.html',
-        image: HOST + 'threeExamples/shader/candleShader.jpg',
+        id: "candleShader",
+        name: "蜡烛",
+        author: "z2586300277",
+        codeUrl: HOST + "threeExamples/shader/candleShader.html",
+        image: HOST + "threeExamples/shader/candleShader.jpg",
       },
     ],
   },
@@ -994,12 +999,13 @@ export default [
     name: "物理应用",
     children: [
       {
-        id: 'threeForce',
-        name: '力导向图',
-        author: 'vasturiano',
-        openUrl: 'https://vasturiano.github.io/3d-force-graph/example/large-graph/',
-        githubUrl: 'https://github.com/vasturiano/3d-force-graph',
-        image: HOST + 'threeExamples/physics/threeForce.jpg',
+        id: "threeForce",
+        name: "力导向图",
+        author: "vasturiano",
+        openUrl:
+          "https://vasturiano.github.io/3d-force-graph/example/large-graph/",
+        githubUrl: "https://github.com/vasturiano/3d-force-graph",
+        image: HOST + "threeExamples/physics/threeForce.jpg",
       },
       {
         id: "physicsMesh",
