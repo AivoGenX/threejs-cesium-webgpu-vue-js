@@ -285,7 +285,21 @@ export default [
         name: "海面",
         author: "AivoGenX",
         codeUrl: HOST + "threeExamples/shader/oceanShader.html",
-        image: HOST + "threeExamples/shader/oceanShader.jpg",
+        image: HOST + "threeExamples/shader/oceanShader.png",
+      },
+      {
+        id: "transparentGradient",
+        name: "透明渐变",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/transparentGradient.html",
+        image: HOST + "threeExamples/shader/transparentGradient.png",
+      },
+      {
+        id: "loveShader",
+        name: "爱心",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/loveShader.html",
+        image: HOST + "threeExamples/shader/loveShader.png",
       },
       {
         id: "innerGlow",
