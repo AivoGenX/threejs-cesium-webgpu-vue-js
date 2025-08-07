@@ -302,6 +302,13 @@ export default [
         image: HOST + "threeExamples/shader/loveShader.png",
       },
       {
+        id: "cityMixShader",
+        name: "城市混合Shader",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/cityMixShader.html",
+        image: HOST + "threeExamples/shader/cityMixShader.jpg",
+      },
+      {
         id: "innerGlow",
         name: "内发光",
         name_en: "Inner Glow",
