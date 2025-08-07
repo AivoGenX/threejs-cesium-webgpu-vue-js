@@ -274,6 +274,13 @@ export default [
         image: HOST + "threeExamples/shader/cityEffect.jpg",
       },
       {
+        id: "cityBlendLight",
+        name: "城市混合扫光",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/cityBlendLight.html",
+        image: HOST + "threeExamples/shader/cityBlendLight.jpg",
+      },
+      {
         id: "innerGlow",
         name: "内发光",
         name_en: "Inner Glow",
