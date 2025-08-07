@@ -281,6 +281,13 @@ export default [
         image: HOST + "threeExamples/shader/cityBlendLight.jpg",
       },
       {
+        id: "oceanShader",
+        name: "海面",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/oceanShader.html",
+        image: HOST + "threeExamples/shader/oceanShader.jpg",
+      },
+      {
         id: "innerGlow",
         name: "内发光",
         name_en: "Inner Glow",
