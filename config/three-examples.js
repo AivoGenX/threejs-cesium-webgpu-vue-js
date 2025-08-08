@@ -1390,45 +1390,101 @@ export default [
       },
     ],
   },
+ 
   {
     pid: "tools",
-    name: "工具",
+    name: "相关工具",
     children: [
       {
         id: "sketchfab_model",
         name: "sketchfab免费模型",
-        author: "z2586300277",
+        author: "giser2017",
         openUrl: "https://sketchfab.com/",
-        image: HOST + "/threeExamples/tools/sketchfab.png",
+        image: HOST + "threeExamples/tools/sketchfab.jpg"
       },
       {
-        id: "gltf_report",
-        name: "gltf在线draco压缩工具",
-        author: "z2586300277",
-        openUrl: "https://gltf.report/",
-        image: HOST + "/threeExamples/tools/gltf_report.jpg",
+        id: "shaderToy",
+        name: "开源shader社区",
+        author: "giser2017",
+        openUrl: "https://www.shadertoy.com/",
+        image: FILE_HOST + "images/shaderToy.jpg"
       },
       {
         id: "skyBox_image",
         name: "免费hdr全景图资源",
-        author: "z2586300277",
+        author: "giser2017",
         openUrl: "https://polyhaven.com/hdris/skies",
-        image: HOST + "/threeExamples/tools/skyBox_image.jpg",
+        image: HOST + "threeExamples/tools/skyBox_image.jpg"
+      },
+      {
+        id: "gltf_report",
+        name: "gltf在线draco压缩工具",
+        author: "donmccurdy",
+        openUrl: "https://gltf.report/",
+        image: HOST + "threeExamples/tools/gltf_report.jpg"
       },
       {
         id: "skyBox_Make",
         name: "hdr制作天空盒",
-        author: "z2586300277",
+        author: "matheowis",
         openUrl: "https://matheowis.github.io/HDRI-to-CubeMap/",
-        image: HOST + "/threeExamples/tools/skyBox_Make.jpg",
+        githubUrl: "https://github.com/matheowis/HDRI-to-CubeMap",
+        image: HOST + "threeExamples/tools/skyBox_Make.jpg"
       },
       {
         id: "make_json_font",
         name: "字体转Three使用json字体",
-        author: "z2586300277",
-        openUrl: "https://gero3.github.io/facetype.html/",
-        image: HOST + "/threeExamples/tools/make_json_font.jpg",
+        author: "gero3",
+        openUrl: "https://gero3.github.io/facetype.js/",
+        githubUrl: "https://github.com/gero3/facetype.js",
+        image: HOST + "threeExamples/tools/make_json_font.jpg"
       },
-    ],
-  },
+      {
+        id: "shaderWebgl",
+        name: "Webgl直接可用Shader",
+        author: "mrdoob",
+        openUrl: "https://glslsandbox.com/",
+        githubUrl: "https://github.com/mrdoob/glsl-sandbox",
+        image: FILE_HOST + "images/shaderWebgl.jpg"
+      },
+      {
+        id: "shaderEditor",
+        name: "Shader编辑器",
+        author: "patriciogonzalezvivo",
+        openUrl: "https://editor.thebookofshaders.com/",
+        githubUrl: "https://github.com/patriciogonzalezvivo/glslEditor",
+        image: FILE_HOST + "images/shaderEditor.jpg"
+      },
+      {
+        id: "geojsonTool",
+        name: "geojson获取工具",
+        author: "giser2017",
+        openUrl: "https://datav.aliyun.com/portal/school/atlas/area_selector",
+        image: HOST + "threeExamples/tools/geojsonTool.jpg"
+      },
+      {
+        id: "TRELLIS",
+        name: "图片生成3D模型",
+        author: "giser2017",
+        githubUrl: "https://github.com/microsoft/TRELLIS",
+        openUrl: "https://microsoft.github.io/TRELLIS/",
+        image: HOST + "threeExamples/tools/TRELLIS.jpg"
+      },
+      {
+        id: "mixamo",
+        name: "制作人物动画",
+        author: "giser2017",
+        openUrl: "https://www.mixamo.com/",
+        image: HOST + "threeExamples/tools/mixamo.jpg"
+      },
+      {
+        id: "gltf_viewer",
+        name: "gltf模型查看器",
+        author: "giser2017",
+        githubUrl: "https://github.com/donmccurdy/three-gltf-viewer",
+        openUrl: "https://gltf-viewer.donmccurdy.com/",
+        image: HOST + "threeExamples/tools/gltf_viewer.jpg"
+      }
+    ]
+  }
 ];
