@@ -634,6 +634,13 @@ export default [
         codeUrl: HOST + "threeExamples/shader/tachnologyFloor.html",
         image: HOST + "threeExamples/shader/tachnologyFloor.jpg",
       },
+      {
+        id: "threeLogo",
+        name: "three.js Logo",
+        author: "threemap",
+        codeUrl: HOST + "threeExamples/shader/threeLogo.html",
+        image: HOST + "threeExamples/shader/threeLogo.jpg",
+      },
     ],
   },
   {
