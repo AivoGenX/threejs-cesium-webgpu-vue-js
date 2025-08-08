@@ -627,6 +627,13 @@ export default [
         codeUrl: HOST + "threeExamples/shader/candleShader.html",
         image: HOST + "threeExamples/shader/candleShader.jpg",
       },
+      {
+        id: "tachnologyFloor",
+        name: "科技风地面",
+        author: "flowers-10",
+        codeUrl: HOST + "threeExamples/shader/tachnologyFloor.html",
+        image: HOST + "threeExamples/shader/tachnologyFloor.jpg",
+      },
     ],
   },
   {
