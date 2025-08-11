@@ -7,8 +7,8 @@
 <script type="importmap">
 {
     "imports": {
-        "three": "https://threejs.org/build/three.module.min.js",
-        "three/examples/jsm/": "https://threejs.org/examples/jsm/"
+        "three": "./threejs/build/three.module.js",
+        "three/addons/": "./threejs/examples/jsm/"
     }
 }
 </script>
@@ -155,7 +155,7 @@
 
 <script type="module">
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 // 颜色转换工具函数
 function hexToRgb(hex) {
