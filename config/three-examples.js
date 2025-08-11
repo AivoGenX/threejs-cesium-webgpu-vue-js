@@ -641,6 +641,20 @@ export default [
         codeUrl: HOST + "threeExamples/shader/threeLogo.html",
         image: HOST + "threeExamples/shader/threeLogo.jpg",
       },
+      {
+        id: "audioDance",
+        name: "音乐舞动",
+        author: "wuyifan0203",
+        codeUrl: HOST + "threeExamples/shader/audioDance.html",
+        image: HOST + "threeExamples/shader/audioDance.jpg",
+      },
+      {
+        id: "cloudShader",
+        name: "天空云",
+        author: "wuyifan0203",
+        codeUrl: HOST + "threeExamples/shader/cloudShader.html",
+        image: HOST + "threeExamples/shader/cloudShader.jpg",
+      },
     ],
   },
   {
@@ -1390,7 +1404,7 @@ export default [
       },
     ],
   },
- 
+
   {
     pid: "tools",
     name: "相关工具",
@@ -1400,28 +1414,28 @@ export default [
         name: "sketchfab免费模型",
         author: "giser2017",
         openUrl: "https://sketchfab.com/",
-        image: HOST + "threeExamples/tools/sketchfab.jpg"
+        image: HOST + "threeExamples/tools/sketchfab.jpg",
       },
       {
         id: "shaderToy",
         name: "开源shader社区",
         author: "giser2017",
         openUrl: "https://www.shadertoy.com/",
-        image: FILE_HOST + "images/shaderToy.jpg"
+        image: FILE_HOST + "images/shaderToy.jpg",
       },
       {
         id: "skyBox_image",
         name: "免费hdr全景图资源",
         author: "giser2017",
         openUrl: "https://polyhaven.com/hdris/skies",
-        image: HOST + "threeExamples/tools/skyBox_image.jpg"
+        image: HOST + "threeExamples/tools/skyBox_image.jpg",
       },
       {
         id: "gltf_report",
         name: "gltf在线draco压缩工具",
         author: "donmccurdy",
         openUrl: "https://gltf.report/",
-        image: HOST + "threeExamples/tools/gltf_report.jpg"
+        image: HOST + "threeExamples/tools/gltf_report.jpg",
       },
       {
         id: "skyBox_Make",
@@ -1429,7 +1443,7 @@ export default [
         author: "matheowis",
         openUrl: "https://matheowis.github.io/HDRI-to-CubeMap/",
         githubUrl: "https://github.com/matheowis/HDRI-to-CubeMap",
-        image: HOST + "threeExamples/tools/skyBox_Make.jpg"
+        image: HOST + "threeExamples/tools/skyBox_Make.jpg",
       },
       {
         id: "make_json_font",
@@ -1437,7 +1451,7 @@ export default [
         author: "gero3",
         openUrl: "https://gero3.github.io/facetype.js/",
         githubUrl: "https://github.com/gero3/facetype.js",
-        image: HOST + "threeExamples/tools/make_json_font.jpg"
+        image: HOST + "threeExamples/tools/make_json_font.jpg",
       },
       {
         id: "shaderWebgl",
@@ -1445,7 +1459,7 @@ export default [
         author: "mrdoob",
         openUrl: "https://glslsandbox.com/",
         githubUrl: "https://github.com/mrdoob/glsl-sandbox",
-        image: FILE_HOST + "images/shaderWebgl.jpg"
+        image: FILE_HOST + "images/shaderWebgl.jpg",
       },
       {
         id: "shaderEditor",
@@ -1453,14 +1467,14 @@ export default [
         author: "patriciogonzalezvivo",
         openUrl: "https://editor.thebookofshaders.com/",
         githubUrl: "https://github.com/patriciogonzalezvivo/glslEditor",
-        image: FILE_HOST + "images/shaderEditor.jpg"
+        image: FILE_HOST + "images/shaderEditor.jpg",
       },
       {
         id: "geojsonTool",
         name: "geojson获取工具",
         author: "giser2017",
         openUrl: "https://datav.aliyun.com/portal/school/atlas/area_selector",
-        image: HOST + "threeExamples/tools/geojsonTool.jpg"
+        image: HOST + "threeExamples/tools/geojsonTool.jpg",
       },
       {
         id: "TRELLIS",
@@ -1468,14 +1482,14 @@ export default [
         author: "giser2017",
         githubUrl: "https://github.com/microsoft/TRELLIS",
         openUrl: "https://microsoft.github.io/TRELLIS/",
-        image: HOST + "threeExamples/tools/TRELLIS.jpg"
+        image: HOST + "threeExamples/tools/TRELLIS.jpg",
       },
       {
         id: "mixamo",
         name: "制作人物动画",
         author: "giser2017",
         openUrl: "https://www.mixamo.com/",
-        image: HOST + "threeExamples/tools/mixamo.jpg"
+        image: HOST + "threeExamples/tools/mixamo.jpg",
       },
       {
         id: "gltf_viewer",
@@ -1483,8 +1497,8 @@ export default [
         author: "giser2017",
         githubUrl: "https://github.com/donmccurdy/three-gltf-viewer",
         openUrl: "https://gltf-viewer.donmccurdy.com/",
-        image: HOST + "threeExamples/tools/gltf_viewer.jpg"
-      }
-    ]
-  }
+        image: HOST + "threeExamples/tools/gltf_viewer.jpg",
+      },
+    ],
+  },
 ];
