@@ -172,6 +172,20 @@ export default [
           description: "程序化地形生成",
         },
       },
+      {
+        id: "radarScan",
+        name: "雷达扫描",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/radarScan.html",
+        image: HOST + "threeExamples/shader/radarScan.jpg",
+      },
+      {
+        id: "radarScan2",
+        name: "雷达扫描2",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/radarScan2.html",
+        image: HOST + "threeExamples/shader/radarScan2.jpg",
+      },
     ],
   },
   {
@@ -623,7 +637,7 @@ export default [
       {
         id: "candleShader",
         name: "蜡烛",
-        author: "z2586300277",
+        author: "AivoGenX",
         codeUrl: HOST + "threeExamples/shader/candleShader.html",
         image: HOST + "threeExamples/shader/candleShader.jpg",
       },
@@ -654,6 +668,13 @@ export default [
         author: "wuyifan0203",
         codeUrl: HOST + "threeExamples/shader/cloudShader.html",
         image: HOST + "threeExamples/shader/cloudShader.jpg",
+      },
+      {
+        id: "compassShader",
+        name: "罗盘",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/compassShader.html",
+        image: HOST + "threeExamples/shader/compassShader.jpg",
       },
     ],
   },
