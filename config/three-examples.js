@@ -281,6 +281,13 @@ export default [
     name: "着色器",
     children: [
       {
+        id: "groundglass",
+        name: "毛玻璃",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/groundglass.html",
+        image: HOST + "threeExamples/shader/groundglass.jpg",
+      },
+      {
         id: "cityEffect",
         name: "城市扫描",
         author: "AivoGenX",
