@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>中国国旗3D动画</title>
     <script type="importmap">
-{
-    "imports": {
-        "three": "https://threejs.org/build/three.module.min.js",
-        "three/examples/jsm/": "https://threejs.org/examples/jsm/"
-    }
-}
+   {
+        "imports": {
+          "three": "./threejs/build/three.module.js",
+          "three/addons/": "./threejs/examples/jsm/"
+        }
+      }
 </script>
     <style>
         body {
@@ -70,7 +70,7 @@
     </div>
     <script type="module">
         import * as THREE from 'three'
-        import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+        import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
         const container = document.getElementById('container')
 
