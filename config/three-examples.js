@@ -268,11 +268,20 @@ export default [
     pid: "shader",
     name: "着色器",
     children: [
+
+      {
+        id: 'chinaFlag',
+        name: '中国旗帜',
+        name_en: 'China Flag',
+        author: 'giser2017',
+        codeUrl: HOST + 'threeExamples/shader/chinaFlag.html',
+        image: HOST + 'threeExamples/shader/chinaFlag.jpg',
+      },
       {
         id: 'innerGlow',
         name: '内发光',
         name_en: 'Inner Glow',
-        author: 'quyinggang',  
+        author: 'quyinggang',
         codeUrl: HOST + 'threeExamples/shader/innerGlow.html',
         image: HOST + 'threeExamples/shader/innerGlow.png',
       },
