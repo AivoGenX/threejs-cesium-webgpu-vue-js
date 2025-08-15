@@ -335,6 +335,7 @@ export default [
         author: "AivoGenX",
         codeUrl: HOST + "threeExamples/shader/flowerShader.html",
         image: HOST + "threeExamples/shader/flowerShader.jpg",
+        referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
       },
       {
         id: "grayShader",
