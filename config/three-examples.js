@@ -43,6 +43,17 @@ export default [
         tag: "轻量级", // 标签
         bgcolor: "rgb(255 136 130)", // 背景颜色
       },
+      {
+        id: "threemap",
+        name: "浏览器传值方式查看模型工具",
+        author: "AivoGenX",
+        openUrl: "https://threelab.cn/tools/modelpreview/#/",
+        image: "https://threelab.cn/img/modelpreview.png",
+        tag: "新工具", // 标签
+        bgcolor: "rgb(181, 200, 34)", // 背景颜色
+      },
+      
+
     ],
   },
   {
