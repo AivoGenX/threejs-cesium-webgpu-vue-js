@@ -6,11 +6,22 @@ export default [
     children: [
       {
         id: "ThreeChineseExamples", // 官方示例
-        name: "官方示例 - 优化版",
+        name: "threejs官网实例 - 优化版",
         author: "AivoGenX",
         openUrl: "http://examples.threelab.cn/#/example",
         githubUrl: "https://github.com/OpenWeb3D/ThreeChineseExamples",
         image: HOST + "/threeExamples/openSource/ThreeChineseExamples.png",
+        tag: "官网优化", // 标签
+        bgcolor: "rgb(181, 28, 34)", // 背景颜色
+      },
+      {
+        id: "editor",
+        name: "模型编辑器",
+        author: "AivoGenX",
+        openUrl: "https://threelab.cn/threejs-edit/",
+        image: "https://www.threelab.cn/img/threejs-edit.png",
+        tag: "编辑器", // 标签
+        bgcolor: "rgb(0 206 249)", // 背景颜色
       },
       {
         id: "tool",
@@ -20,7 +31,29 @@ export default [
           "https://blog.csdn.net/huhuan123456/article/details/143191390?sharetype=blogdetail&sharerId=143191390&sharerefer=PC&sharesource=huhuan123456&spm=1011.2480.3001.8118",
         githubUrl: "https://pan.baidu.com/s/1AiFKTTknkEHkJ7t4nQ2P1g",
         image: FILE_HOST + "images/tool.png",
+        tag: "下载器", // 标签
+        bgcolor: "rgb(193 136 0)", // 背景颜色
       },
+      {
+        id: "threemap",
+        name: "轻量级地图引擎",
+        author: "AivoGenX",
+        openUrl: "https://threelab.cn/threemap/#/example",
+        image: "https://threelab.cn/img/threemap.png",
+        tag: "轻量级", // 标签
+        bgcolor: "rgb(255 136 130)", // 背景颜色
+      },
+      {
+        id: "modelpreview",
+        name: "浏览器传值方式查看模型工具",
+        author: "AivoGenX",
+        openUrl: "https://threelab.cn/tools/modelpreview/#/",
+        image: "https://threelab.cn/img/modelpreview.png",
+        tag: "新工具", // 标签
+        bgcolor: "rgb(181, 200, 34)", // 背景颜色
+      },
+      
+
     ],
   },
   {
@@ -88,6 +121,8 @@ export default [
   },
   {
     pid: "smartCity",
+    gid: "application",
+    gname: "数字孪生",
     name: "智慧城市",
     children: [
       {
@@ -204,6 +239,8 @@ export default [
   },
   {
     pid: "IndustryApplications",
+    gid: "application",
+    gname: "数字孪生",
     name: "行业应用",
     children: [
       {
@@ -767,6 +804,8 @@ export default [
   },
   {
     pid: "PrimitiveBody",
+    gid: "Element",
+    gname: "图元",
     name: "体图元",
     children: [
       {
@@ -847,6 +886,8 @@ export default [
   },
   {
     pid: "line",
+    gid: "Element",
+    gname: "图元",
     name: "线图元",
     children: [
       {
@@ -1147,6 +1188,8 @@ export default [
   {
     pid: "basic",
     name: "基础案例",
+    gid: "introduction",
+    gname: "入门案例",
     children: [
       {
         id: "modelLoad",
@@ -1283,8 +1326,10 @@ export default [
     ],
   },
   {
-    pid: "introduction",
-    name: "入门案例",
+    pid: "case",
+    name: "入门实例",
+    gid: "introduction",
+    gname: "入门案例",
     children: [
       {
         id: "入门",
