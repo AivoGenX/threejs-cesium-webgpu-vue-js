@@ -44,7 +44,7 @@ export default [
         bgcolor: "rgb(255 136 130)", // 背景颜色
       },
       {
-        id: "threemap",
+        id: "modelpreview",
         name: "浏览器传值方式查看模型工具",
         author: "AivoGenX",
         openUrl: "https://threelab.cn/tools/modelpreview/#/",
