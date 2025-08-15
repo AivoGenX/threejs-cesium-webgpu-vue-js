@@ -330,6 +330,13 @@ export default [
     name: "着色器",
     children: [
       {
+        id: "flowerShader",
+        name: "花",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/flowerShader.html",
+        image: HOST + "threeExamples/shader/flowerShader.jpg",
+      },
+      {
         id: "grayShader",
         name: "灰度效果",
         author: "AivoGenX",
