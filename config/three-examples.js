@@ -295,6 +295,13 @@ export default [
     name: "着色器",
     children: [
       {
+        id: "jumpHeart",
+        name: "跳动的心",
+        author: "stonerao",
+        codeUrl: HOST + "threeExamples/shader/jumpHeart.html",
+        image: HOST + "threeExamples/shader/jumpHeart.jpg",
+      },
+      {
         id: "chinaFlag",
         name: "中国旗帜",
         name_en: "China Flag",
