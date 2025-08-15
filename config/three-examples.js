@@ -52,8 +52,6 @@ export default [
         tag: "新工具", // 标签
         bgcolor: "rgb(181, 200, 34)", // 背景颜色
       },
-      
-
     ],
   },
   {
@@ -331,6 +329,13 @@ export default [
     pid: "shader",
     name: "着色器",
     children: [
+      {
+        id: "grayShader",
+        name: "灰度效果",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/grayShader.html",
+        image: HOST + "threeExamples/shader/grayShader.jpg",
+      },
       {
         id: "jumpHeart",
         name: "跳动的心",
