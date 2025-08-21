@@ -330,12 +330,20 @@ export default [
     name: "着色器",
     children: [
       {
+        id: "blobShader",
+        name: "一团揉动",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/blobShader.html",
+        image: HOST + "threeExamples/shader/blobShader.jpg",
+        referUrl: "https://codepen.io/vcomics/pen/ZwNgvX",
+      },
+      {
         id: "flowerShader",
         name: "花",
         author: "AivoGenX",
         codeUrl: HOST + "threeExamples/shader/flowerShader.html",
         image: HOST + "threeExamples/shader/flowerShader.jpg",
-        referUrl: 'https://codepen.io/vcomics/pen/jeWpgX',
+        referUrl: "https://codepen.io/vcomics/pen/jeWpgX",
       },
       {
         id: "grayShader",
