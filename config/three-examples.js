@@ -330,6 +330,35 @@ export default [
     name: "着色器",
     children: [
       {
+        id: "shader_planet",
+        name: "着色器行星",
+        author: "nico",
+        codeUrl: HOST + "threeExamples/shader/shader_planet.html",
+        image: HOST + "threeExamples/shader/shader_planet.jpg",
+      },
+
+      {
+        id: "mosaicShader",
+        name: "马赛克",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/mosaicShader.html",
+        image: HOST + "threeExamples/shader/mosaicShader.jpg",
+      },
+      {
+        id: "mushroom",
+        name: "蘑菇",
+        author: "bubinyang",
+        codeUrl: HOST + "threeExamples/shader/mushroom.html",
+        image: HOST + "threeExamples/shader/mushroom.jpg",
+      },
+      {
+        id: "circleRotate",
+        name: "旋转的圆",
+        author: "AivoGenX",
+        codeUrl: HOST + "threeExamples/shader/circleRotate.html",
+        image: HOST + "threeExamples/shader/circleRotate.jpg",
+      },
+      {
         id: "blobShader",
         name: "一团揉动",
         author: "AivoGenX",

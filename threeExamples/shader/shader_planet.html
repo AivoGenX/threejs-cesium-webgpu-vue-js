@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星空球体地形 | Three.js 示例</title>
+    <!-- 配置模块导入映射 -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./threejs/build/three.module.js",
+          "three/addons/": "./threejs/examples/jsm/",
+          "dat.gui": "./js/dat/build/dat.gui.module.js",
+          "three_noise": "https://AivoGenX.github.io/web3d-file-server/js/wasm/three_noise.js"
+        }
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #0a0a16; /* 更深的背景色，增强星空效果 */
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #container {
+        width: 100%;
+        height: 100%;
+      }
+      /* 加载提示样式 */
+      .loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 1.2rem;
+        opacity: 0.9;
+        transition: opacity 0.5s ease;
+        z-index: 100;
+      }
+      .loading.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 加载提示 -->
+    <div class="loading" id="loading">初始化场景中...</div>
+    <!-- 渲染容器 -->
+    <div id="container"></div>
+
+    <script type="module">
+      // 导入所需库
+      import * as THREE from "three";
+      import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+      import { GUI } from "dat.gui";
+      import init, { fbm } from "three_noise";
+
+      // 获取DOM容器
+      const container = document.getElementById("container");
+      const loadingIndicator = document.getElementById("loading");
+
+      // 初始化场景
+      const scene = new THREE.Scene();
+
+      // 加载星空背景纹理
+      const loadBackgroundTexture = async () => {
+        try {
+          loadingIndicator.textContent = "加载星空背景...";
+          const textureLoader = new THREE.TextureLoader();
+          const texture = await new Promise((resolve, reject) => {
+            textureLoader.load(
+              "/files/images/8k_stars_milky_way.jpg",
+              resolve,
+              null,
+              reject
+            );
+          });
+          scene.background = texture;
+          return true;
+        } catch (error) {
+          console.error("背景纹理加载失败:", error);
+          loadingIndicator.textContent = "背景加载失败";
+          return false;
+        }
+      };
+
+      // 初始化相机
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        container.clientWidth / container.clientHeight,
+        0.1,
+        1000
+      );
+      camera.position.set(0, 0, 20); // 设置相机初始位置
+
+      // 初始化渲染器
+      const renderer = new THREE.WebGLRenderer({
+        antialias: true, // 启用抗锯齿
+        alpha: true,
+      });
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); // 平衡性能与质量
+      container.appendChild(renderer.domElement);
+
+      // 初始化轨道控制器
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true; // 启用阻尼效果
+      controls.dampingFactor = 0.05; // 阻尼系数
+      controls.rotateSpeed = 0.3; // 旋转速度
+      controls.zoomSpeed = 0.7; // 缩放速度
+      controls.enablePan = false; // 禁用平移
+
+      // 处理窗口大小变化
+      window.addEventListener("resize", onWindowResize);
+      function onWindowResize() {
+        // 更新渲染器尺寸
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        // 更新相机宽高比
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+      }
+
+      // 生成噪声纹理
+      const generateNoiseTexture = async () => {
+        try {
+          loadingIndicator.textContent = "生成噪声纹理...";
+
+          // 初始化噪声库
+          await init();
+
+          // 纹理尺寸设置（平衡细节与性能）
+          const textureSize = 1024;
+          const dataLength = textureSize * textureSize * 4;
+          const textureData = new Uint8Array(dataLength);
+
+          // 填充纹理数据
+          for (let x = 0; x < textureSize; x++) {
+            for (let y = 0; y < textureSize; y++) {
+              // 计算FBM噪声值（分形布朗运动）
+              const fbmValue = fbm(
+                x / textureSize, // 标准化X坐标
+                y / textureSize, // 标准化Y坐标
+                6, // 八度
+                2.0, // 频率
+                1.5 // 振幅
+              );
+
+              // 将噪声值映射到0-255范围
+              const colorValue = Math.floor(fbmValue * 128 + 128);
+              const index = (x + y * textureSize) * 4;
+
+              // 填充RGBA通道（创建蓝紫色调的噪声纹理）
+              textureData[index] = colorValue; // R通道
+              textureData[index + 1] = colorValue * 0.8; // G通道（稍暗）
+              textureData[index + 2] = Math.floor(fbmValue * 255); // B通道
+              textureData[index + 3] = 255; // 不透明度
+            }
+          }
+
+          // 创建数据纹理
+          const texture = new THREE.DataTexture(
+            textureData,
+            textureSize,
+            textureSize,
+            THREE.RGBAFormat
+          );
+          texture.wrapS = THREE.RepeatWrapping;
+          texture.wrapT = THREE.RepeatWrapping;
+          texture.repeat.set(1, -1); // Y轴翻转
+          texture.needsUpdate = true;
+
+          return texture;
+        } catch (error) {
+          console.error("噪声纹理生成失败:", error);
+          loadingIndicator.textContent = "纹理生成失败";
+          return null;
+        }
+      };
+
+      // 全局变量
+      let sphereMesh, sphereMaterial;
+      const params = {
+        showTerrain: true, // 是否显示地形
+        terrainHeight: 1.5, // 地形高度缩放
+        rotationSpeed: 0.01, // 旋转速度
+        showWireframe: false, // 是否显示线框
+      };
+
+      // 添加星空球体
+      const addSkySphere = async () => {
+        try {
+          loadingIndicator.textContent = "创建球体...";
+
+          // 生成噪声纹理
+          const noiseTexture = await generateNoiseTexture();
+          if (!noiseTexture) return;
+
+          // 球体几何体（分段数平衡细节与性能）
+          const sphereGeometry = new THREE.SphereGeometry(5, 120, 120);
+
+          // 定义uniform变量
+          const uniforms = {
+            u_texture: { value: noiseTexture },
+            u_terrainHeight: { value: params.terrainHeight },
+          };
+
+          // 顶点着色器（基础版本）
+          const baseVertexShader = `
+                    varying vec2 vUv;
+                    void main() {
+                        vUv = uv;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `;
+
+          // 顶点着色器（地形版本）
+          const terrainVertexShader = `
+                    uniform sampler2D u_texture;
+                    uniform float u_terrainHeight;
+                    varying vec2 vUv;
+                    void main() {
+                        vUv = uv;
+                        // 从纹理采样高度值
+                        vec4 color = texture2D(u_texture, uv);
+                        float height = color.r; // 使用红色通道作为高度
+                        // 根据高度偏移顶点位置
+                        vec3 newPosition = position + normal * height * u_terrainHeight;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
+                    }
+                `;
+
+          // 片段着色器
+          const fragmentShader = `
+                    varying vec2 vUv;
+                    uniform sampler2D u_texture;
+                    void main() {
+                        vec4 color = texture2D(u_texture, vUv);
+                        gl_FragColor = color;
+                    }
+                `;
+
+          // 创建着色器材质
+          sphereMaterial = new THREE.ShaderMaterial({
+            uniforms: uniforms,
+            vertexShader: baseVertexShader,
+            fragmentShader: fragmentShader,
+            side: THREE.DoubleSide, // 双面可见
+            wireframe: params.showWireframe,
+          });
+
+          // 创建网格并添加到场景
+          sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
+          scene.add(sphereMesh);
+
+          // 隐藏加载提示
+          setTimeout(() => {
+            loadingIndicator.classList.add("hidden");
+          }, 500);
+
+          return true;
+        } catch (error) {
+          console.error("球体创建失败:", error);
+          loadingIndicator.textContent = "球体创建失败";
+          return false;
+        }
+      };
+
+      // 更新材质（切换地形/基础模式）
+      const updateMaterial = () => {
+        if (!sphereMaterial) return;
+
+        // 根据模式切换顶点着色器
+        sphereMaterial.vertexShader = params.showTerrain
+          ? `
+                    uniform sampler2D u_texture;
+                    uniform float u_terrainHeight;
+                    varying vec2 vUv;
+                    void main() {
+                        vUv = uv;
+                        vec4 color = texture2D(u_texture, uv);
+                        float height = color.r;
+                        vec3 newPosition = position + normal * height * u_terrainHeight;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
+                    }
+                `
+          : `
+                    varying vec2 vUv;
+                    void main() {
+                        vUv = uv;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `;
+
+        // 更新其他材质属性
+        sphereMaterial.wireframe = params.showWireframe;
+        sphereMaterial.uniforms.u_terrainHeight.value = params.terrainHeight;
+
+        // 标记材质需要更新
+        sphereMaterial.needsUpdate = true;
+      };
+
+      // 添加GUI控制面板
+      const addGUI = () => {
+        const gui = new GUI({ width: 300 });
+
+        // 地形开关
+        gui
+          .add(params, "showTerrain")
+          .name("显示地形")
+          .onChange(updateMaterial);
+
+        // 地形高度控制
+        gui
+          .add(params, "terrainHeight", 0.1, 5.0)
+          .name("地形高度")
+          .step(0.1)
+          .onChange(updateMaterial);
+
+        // 旋转速度控制
+        gui.add(params, "rotationSpeed", 0, 0.1).name("旋转速度").step(0.001);
+
+        // 线框显示
+        gui
+          .add(params, "showWireframe")
+          .name("显示线框")
+          .onChange(updateMaterial);
+
+        return gui;
+      };
+
+      // 动画循环
+      function animate() {
+        requestAnimationFrame(animate);
+
+        // 球体旋转
+        if (sphereMesh) {
+          sphereMesh.rotation.y += params.rotationSpeed;
+        }
+
+        // 更新控制器（阻尼效果）
+        controls.update();
+
+        // 渲染场景
+        renderer.render(scene, camera);
+      }
+
+      // 初始化流程
+      const initScene = async () => {
+        // 加载背景
+        await loadBackgroundTexture();
+        // 创建球体
+        await addSkySphere();
+        // 添加控制面板
+        addGUI();
+        // 启动动画
+        animate();
+      };
+
+      // 启动场景初始化
+      initScene();
+    </script>
+  </body>
+</html>
