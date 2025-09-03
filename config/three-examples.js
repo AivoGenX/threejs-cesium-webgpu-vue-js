@@ -1242,6 +1242,13 @@ export default [
     gname: "入门案例",
     children: [
       {
+        id: "cameraAttribute",
+        name: "相机属性",
+        author: "giser2017",
+        codeUrl: HOST + "threeExamples/basic/cameraAttribute.html",
+        image: HOST + "threeExamples/basic/cameraAttribute.jpg",
+      },
+      {
         id: "modelShadow",
         name: "模型阴影",
         author: "giser2017",
