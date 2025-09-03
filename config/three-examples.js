@@ -971,6 +971,15 @@ export default [
     name: "应用场景",
     children: [
       {
+        id: "ghostHouse",
+        name: "鬼屋",
+        author: "FFMMCC",
+        codeUrl: HOST + "threeExamples/application/ghostHouse.html",
+        image: HOST + "threeExamples/application/ghostHouse.jpg",
+        tag: "经典案例", // 标签
+        bgcolor: "rgb(181, 28, 34)", // 背景颜色
+      },
+      {
         id: "matrixOperation",
         name: "矩阵操作",
         author: "alwxkxk",

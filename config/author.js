@@ -332,4 +332,10 @@ export default [
     github: "https://github.com/bubinyang",
     icon: "https://avatars.githubusercontent.com/u/52728481?v=4",
   },
+    {
+        id: 'FFMMCC',
+        name: 'FFMMCC',
+        github: 'https://coderfmc.github.io/three.js-demo/fmc-web-3d/',
+        icon: HOST + 'files/author/FFMMCC.jpg'
+    },
 ];
