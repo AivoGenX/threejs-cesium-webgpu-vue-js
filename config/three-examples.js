@@ -1242,6 +1242,13 @@ export default [
     gname: "入门案例",
     children: [
       {
+        id: "modelShadow",
+        name: "模型阴影",
+        author: "giser2017",
+        codeUrl: HOST + "threeExamples/basic/modelShadow.html",
+        image: HOST + "threeExamples/basic/modelShadow.jpg",
+      },
+      {
         id: "modelLoad",
         name: "gltf/fbx/obj模型加载",
         author: "z2586300277",
